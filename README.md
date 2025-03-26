@@ -3,7 +3,8 @@
 This project showcases UI and API development expertise using React, TypeScript, Next.js, and AdonisJS. It enables cluster monitoring by visualizing time series metrics like IOPS and Throughput while managing snapshot policy configurations. The frontend, built with Next.js, leverages Recharts for data visualization and TailwindCSS for styling, while the backend API is powered by AdonisJS.
 
 Here is the loom video to demonstrate the UI features.
-https://www.loom.com/share/327d9d13abe4491ba7cf2999c3182681
+https://www.loom.com/share/ed77c22ce395429b969c8914c5fe88c9
+
 ## Features
 
 ### Frontend
@@ -71,9 +72,10 @@ cp .env.example .env
 ```
 
 ### Add your environment variables in .env:
-
+#### You need to add id of your created Cluster.
 ```bash
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:3333
+NEXT_PUBLIC_CLUSTER_ID=
 ```
 
 ### Run the development server:
@@ -262,6 +264,7 @@ MONGO_URI=
 
 ```bash
 NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:3333
+NEXT_PUBLIC_CLUSTER_ID=
 ```
 
 ## Snapshots
@@ -273,9 +276,10 @@ NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:3333
 ![Cluster Timeseries Graph Screen for Mobile](./screenshots/mobile-view-screen-1.png)
 
 ### Snaphot Policy For Cluster
-
+#### Locked
 ![Locked Snaphot Policy Screen for Web](./screenshots/web-view-screen-2-locked.png)
 
+#### UnLocked
 ![UnLocked Snaphot Policy Screen for Web](./screenshots/web-view-screen-2-unlocked.png)
 
 ![Snaphot Policy Screen for Mobile](./screenshots/mobile-view-screen-2.png)
